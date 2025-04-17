@@ -7,24 +7,24 @@ import org.springframework.context.annotation.Bean;
 
 //Method 1: Using @Bean annotation on a method
 
-@SpringBootApplication
-public class OnlineStore3 {
-
-	public static void main(String[] args) {
-	var context = SpringApplication.run(OnlineStore3.class, args);
-
-	MeineErsteSchule1 meineErsteSchule = context.getBean(MeineErsteSchule1.class);
-
-	System.out.println(meineErsteSchule.sichVorstellen());
-
-	}
-
-	@Bean
-	public MeineErsteSchule1 meineErsteSchule() {
-		return new MeineErsteSchule1("kanamugire");
-	}
-
-}
+//@SpringBootApplication
+//public class OnlineStore3 {
+//
+//	public static void main(String[] args) {
+//	var context = SpringApplication.run(OnlineStore3.class, args);
+//
+//	MeineErsteSchule1 meineErsteSchule = context.getBean(MeineErsteSchule1.class);
+//
+//	System.out.println(meineErsteSchule.sichVorstellen());
+//
+//	}
+//
+//	@Bean
+//	public MeineErsteSchule1 meineErsteSchule() {
+//		return new MeineErsteSchule1("kanamugire");
+//	}
+//
+//}
 
 //Method 2: Using @Component on the class
 
@@ -64,3 +64,19 @@ public class OnlineStore3 {
 //
 //	}
 //}
+
+//Method 4: Using ....................
+
+@SpringBootApplication
+public class OnlineStore3 {
+
+
+	public static void main(String[] args) {
+
+		var context = SpringApplication.run(OnlineStore3.class, args);
+
+		MyFirstService myFirstService = context.getBean(MyFirstService.class);
+
+		System.out.println(myFirstService.introduztion());
+	}
+}

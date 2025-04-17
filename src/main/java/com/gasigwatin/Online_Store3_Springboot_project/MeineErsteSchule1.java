@@ -2,6 +2,8 @@ package com.gasigwatin.Online_Store3_Springboot_project;
 
 //Method 1: Using/Adding @Bean on the method in the main class
 
+import org.springframework.context.annotation.Bean;
+
 public class MeineErsteSchule1 {
 
     private String vorname;
