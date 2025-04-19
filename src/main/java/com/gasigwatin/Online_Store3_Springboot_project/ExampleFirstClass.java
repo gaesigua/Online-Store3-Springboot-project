@@ -17,4 +17,8 @@ public class ExampleFirstClass {
         return "Hallo alles! Ich heisse Tin. " + meinVar;
     }
 
+    public String history(){
+        return "A long time ago in a very far land, ..";
+    }
+
 }

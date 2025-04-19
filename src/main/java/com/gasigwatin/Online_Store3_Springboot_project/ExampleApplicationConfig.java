@@ -13,8 +13,19 @@ public class ExampleApplicationConfig {
     }
 
     @Bean
-    @Qualifier
     public ExampleFirstClass exampleFirstClass2(){
-        return new ExampleFirstClass("Bean 2: Ich bin ein SoftwareEntwickler");
+        return new ExampleFirstClass("Bean 2: ");
+    }
+
+    @Bean
+
+    public ExampleFirstClass exampleFirstClass3(){
+        return new ExampleFirstClass("Bean 3: ");
+    }
+
+    @Bean
+    @Qualifier
+    public ExampleMySecondClass exampleMySecondClass(){
+        return new ExampleMySecondClass();
     }
 }
